@@ -31,22 +31,21 @@ int main(){
     int src;
     cout<<"enter the value you wanna search\n";
     cin>>src;
+    bool found=false;
     for(int row=0;r>row;row++){
         vector<int>v1;
         for(int col=0;c>col;col++){
     
            if(v2[row][col]==src){
-            cout<<"["<<row<<"]"<<"["<<col<<"]" ;         
-             }
-              else {
-                cout<<"not found";
-                               
-             }
-             
+            cout<<"["<<row<<"]"<<"["<<col<<"]" ; 
+             found=true;
 
+             }
+              
         }
-        
-       
+    }
+    if(!found){
+    cout<<"element is not found";
     }
    
 
